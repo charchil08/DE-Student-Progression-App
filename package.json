@@ -1,0 +1,15 @@
+{
+  "name": "de-project-spars-main",
+  "version": "1.0.0",
+  "description": "Student Progression App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "spars-team",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

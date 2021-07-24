@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .activityHeading {
+        text-align: center;
+      }
+      .mainTable {
+        display: flex;
+        justify-content: space-evenly;
+        border-collapse: collapse;
+        text-align: center;
+        /* flex-direction: column; */
+      }
+      .mainTable{
+          border: 2px solid tomato;
+      }
+      #Duration {
+        flex-direction: column;
+      }
+      label {
+        display: flex;
+        justify-content: space-between;
+      }
+      .vh{
+          display: flex;
+          width: 2px;
+          background-color: red;
+          height: 517px;
+      }
+
+      
+      #ActivityType{
+          width: 15%;
+      }
+      #Description{
+          width: 35%;
+      }
+      #level{
+          width: 15%;
+      }
+      #date{
+          width: 15%;
+      }
+      .month{
+          text-align: initial;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="flex-container">
+        <div class="imageI">
+          <img
+            src="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+            alt="Loading..."
+          />
+        </div>
+
+        <div class="info">
+          <li class="Sname">CHIRAG BIPINBHAI CHAVDA</li>
+          <li class="er">190210116013</li>
+        </div>
+
+        <div class="spars">
+          <h1 class="spars">SPARS</h1>
+        </div>
+
+        <div class="logBtn" style="align-self: center">
+          <button id="logOut">LOGOUT</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="activityHeading">
+      <h1>Your Activities</h1>
+    </div>
+    <hr />
+
+    <div class="mainTable">
+      <div class="activityTable">
+        <div class="activityTable" id="Duration">
+          <h1>Duration</h1>
+          <table>
+            <select name="Duration" id="Dura">
+              <option value="1">All</option>
+              <option value="2">Yearly</option>
+              <option value="3">Monthly</option>
+            </select>
+            <br/> <br>
+            
+
+            <div class="year">
+              <table>
+                <caption>
+                  Year
+                </caption>
+                <tr>
+                  <td><input type="checkbox" /></td> <td>2019-20</td>
+                  <td><input type="checkbox" /></td> <td>2020-21</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td> <td>2021-22</td> 
+                  <td><input type="checkbox" /></td> <td>2022-23</td>
+                </tr>
+              </table>
+            </div><br><br>
+
+            <div class="month">
+              <table>
+                <caption>
+                  Month
+                </caption>
+                <tr>
+                  <td><input type="checkbox" />January</td>
+                  <td><input type="checkbox" />February</td>
+                  <td><input type="checkbox" />March</td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" />April</td>
+                  <td><input type="checkbox" />May</td>
+                  <td><input type="checkbox" />June</td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" />July</td>
+                  <td><input type="checkbox" />August</td>
+                  <td><input type="checkbox" />September</td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" />October</td>
+                  <td><input type="checkbox" />November</td>
+                  <td><input type="checkbox" />December</td>
+                </tr>
+              </table>
+              <label for="month"> <br /><br /> </label>
+              <label for="month"> <br /><br /> </label>
+              <label for="month"> <br /><br /> </label>
+              <label for="month"> </label>
+            </div><br><br>
+          </table>
+        </div>
+        <div class="vh"></div>
+
+        <div class="activityTable" id="ActivityType">
+          <h1>ActivityType</h1>
+        </div>
+        <div class="vh"></div>
+
+        <div class="activityTable" id="Description">
+          <h1>Description</h1>
+        </div>
+        <div class="vh"></div>
+
+        <div class="activityTable" id="level">
+          <h1>Level</h1>
+        </div>
+        <div class="vh"></div>
+
+        <div class="activityTable" id="date">
+          <h1>Date</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
